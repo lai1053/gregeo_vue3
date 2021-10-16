@@ -1,0 +1,36 @@
+.collapsedLog {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.ant-layout-fixed-header {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f6f6f6;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border 0s, background 0s, color 0s;
+}
+
+.userBreviary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: 700px;
+  height: 40px;
+  margin-top: 15px;
+  margin-right: 20px;
+  .icon {
+    margin-left: 8px;
+  }
+}
+#avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}

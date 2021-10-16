@@ -1,0 +1,90 @@
+{
+  "name": "Grewall",
+  "version": "0.1.0",
+  "author":"laibinlong@gmail.com",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve --mode dev",
+    "prod": "vue-cli-service serve --mode prod",
+    "build": "vue-cli-service build --mode prod",
+    "build:test": "vue-cli-service build --mode test",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "prettier": "prettier --write ./src",
+    "lint:eslint": "eslint --ext .js,.vue,.jsx ./src",
+    "lint:stylelint": "stylelint --fix src/**/*.{less,css,scss}"
+  },
+  "dependencies": {
+    "ali-oss": "^6.13.2",
+    "ant-design-vue": "2.0.0",
+    "axios": "^0.20.0",
+    "core-js": "^3.6.5",
+    "default-passive-events": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "fetch-jsonp": "^1.1.3",
+    "lodash.clonedeep": "^4.5.0",
+    "moment": "^2.29.1",
+    "quill": "^1.3.7",
+    "register-service-worker": "^1.7.1",
+    "typescript": "^4.0.3",
+    "umi-request": "^1.3.5",
+    "vue": "^3.0.5",
+    "vue-i18n": "^8.22.0",
+    "vue-router": "^4.0.0-rc.6",
+    "vue-types": "^3.0.0",
+    "vuex": "^4.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-mocha": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.3",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "^2.0.0-0",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.1.2",
+    "compression-webpack-plugin": "^6.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "husky": "^3.1.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "vue-axios": "^2.1.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,vue,json,html,yml,css,less,scss,md}": [
+      "prettier --write"
+    ],
+    "*.{jsx,js,vue}": [
+      "eslint --fix --no-ignore"
+    ],
+    "*.{css,less,scss}": [
+      "stylelint --fix"
+    ]
+  }
+}

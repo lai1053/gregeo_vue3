@@ -1,0 +1,48 @@
+.ant-layout-header {
+  padding: 0 0 0 3px !important;
+  background-color: white !important;
+}
+
+.ant-layout-content {
+  margin: 24px 16px;
+  .ant-spin-container {
+    background-color: white;
+  }
+}
+.grewall-pro-layout-trigger {
+  height: 100vh;
+
+  &.trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  &.trigger:hover {
+    color: #1890ff;
+  }
+
+  &.logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.logo {
+  height: 50px;
+  margin: 24px;
+  text-align: center;
+  //background: rgba(255, 255, 255, 0.2);
+}
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
+.grewall-pro-layout-content {
+  position: relative;
+  margin: 90px 24px 40px 24px;
+  background-color: white;
+}
